@@ -90,7 +90,7 @@ const MMenu: React.FC<IProps> = () => {
         break;
 
       default:
-        // break;
+        break;
     }
   };
 
