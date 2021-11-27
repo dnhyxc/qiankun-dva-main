@@ -6,9 +6,7 @@ import { getSStorage, setSStorage } from '@/utils/storageConfig';
 import MScrollbar from '../MScrollbar';
 import styles from './index.less';
 
-interface IProps { }
-
-const MMenu: React.FC<IProps> = () => {
+const MMenu: React.FC = () => {
   const [isUp, setIsUp] = useState<boolean>(false);
   const [isMediaUp, setIsMediaUp] = useState<boolean>(false);
   const [isApplyUp, setisApplyIsUp] = useState<boolean>(false);
