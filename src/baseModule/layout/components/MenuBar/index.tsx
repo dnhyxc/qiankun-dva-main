@@ -1,17 +1,17 @@
-import React from 'react';
-import classNames from 'classnames';
-import styles from './index.less';
+import React from "react";
+import classNames from "classnames";
+import styles from "./index.less";
 
 const routes = [
   {
-    name: 'React',
-    path: '/dnhyxc/react',
-    key: 'react',
+    name: "React",
+    path: "/dnhyxc/react",
+    key: "react",
   },
   {
-    name: 'Vue',
-    path: '/dnhyxc/vue',
-    key: 'vue',
+    name: "Vue",
+    path: "/dnhyxc/vue",
+    key: "vue",
   },
 ];
 
@@ -28,16 +28,16 @@ const MenuBar: React.FC = () => {
     <div className={styles.menuWrap}>
       <div className={styles.title}>QIANKUN</div>
       {routes.map((i) => (
-        <a
+        <span
           className={classNames(
             styles.route,
-            location.pathname.includes(i.path) && styles.active,
+            location.pathname.includes(i.path) && styles.active
           )}
           key={i.key}
           onClick={() => changePage(i.path)}
         >
           {i.name}
-        </a>
+        </span>
       ))}
     </div>
   );
